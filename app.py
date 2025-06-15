@@ -8,30 +8,6 @@ app = FastAPI("/")
 
 os.environ["TOGETHER_API_KEY"] ="0bc66dcded6a57c5aca11ec7f61089f423307023ba560e3b3178fb36c7923a10"
 
-# Option 2: Using a POST request with a JSON body
-class Numbers(BaseModel):
-    a: float
-    b: float
-
-@app.post("/sum")
-def post_sum(numbers: Numbers):
-    return {"sum": numbers.a + numbers.b}
-
-
-@app.post("/multiply")
-def post_sum(numbers: Numbers):
-    return {"multiply": numbers.a * numbers.b}
-
-
-@app.post("/subtract")
-def post_sum(numbers: Numbers):
-    return {"subtract": numbers.a - numbers.b}
-
-
-@app.post("/divide")
-def post_sum(numbers: Numbers):
-    return {"divide": numbers.a / numbers.b}
-
 
 client = openai.OpenAI(
   api_key=os.environ.get("TOGETHER_API_KEY"),
