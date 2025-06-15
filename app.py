@@ -4,7 +4,7 @@ import os
 import openai
 
 
-app = FastAPI()
+app = FastAPI("/")
 
 os.environ["TOGETHER_API_KEY"] ="0bc66dcded6a57c5aca11ec7f61089f423307023ba560e3b3178fb36c7923a10"
 
