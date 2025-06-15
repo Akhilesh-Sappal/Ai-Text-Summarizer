@@ -4,3 +4,4 @@ openai
 transformers
 torch
 requests
+python-multipart
