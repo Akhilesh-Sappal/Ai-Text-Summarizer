@@ -10,7 +10,7 @@ def read_root():
     return {"message": "Welcome to the AI Text Summarizer API"}
 
 # Set the Together API key
-os.environ["TOGETHER_API_KEY"] = "0bc66dcded6a57c5aca11ec7f61089f423307023ba560e3b3178fb36c7923a10"
+os.environ["TOGETHER_API_KEY"] = "Your_API_Key"
 
 # Create the OpenAI client
 client = openai.OpenAI(
